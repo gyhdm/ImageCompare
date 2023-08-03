@@ -1,0 +1,28 @@
+# Spring??
+spring:
+    # ????
+    servlet:
+        multipart:
+            # ?????
+            max-file-size: 2000MB
+            # ????????
+            max-request-size: 2000MB
+server:
+    port: 8087
+    servlet:
+        context-path: /txbd
+    tomcat:
+        uri-encoding: UTF-8
+        accept-count: 1000
+        threads:
+            max: 500
+            min-spare: 10
+logging:
+    level:
+        com.tpbd: debug
+        org.springframework: warn
+log:
+    file:
+        path: /Users/guoying/WorkSpace/other/logs
+upload:
+    path: /Users/guoying/WorkSpace/other/uploads
