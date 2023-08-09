@@ -25,8 +25,8 @@ import java.util.Objects;
 @ConditionalOnWebApplication(type = ConditionalOnWebApplication.Type.SERVLET)
 public class ResourcesConfig implements WebMvcConfigurer {
 
-    @Value("${upload.path}")
-    private String uploadPath;
+    @Value("${upload.base_path}")
+    private String uploadBasePath;
 
     @Autowired(required = false)
     private MappingJackson2HttpMessageConverter mappingJackson2HttpMessageConverter;
@@ -44,7 +44,7 @@ public class ResourcesConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("static/**")
-                .addResourceLocations("file:" + uploadPath + "/");
+                .addResourceLocations("file:" + uploadBasePath + "/images");
     }
 
     /**

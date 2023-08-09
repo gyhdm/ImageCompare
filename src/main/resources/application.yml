@@ -21,8 +21,10 @@ logging:
     level:
         com.tpbd: debug
         org.springframework: warn
-log:
-    file:
-        path: /Users/guoying/WorkSpace/other/logs
 upload:
-    path: /Users/guoying/WorkSpace/other/uploads
+#    path: /Users/guoying/WorkSpace/other/uploads
+    path: D:\\phpstudy_pro\\WWW\\storage.dlyltstore.com\\storage.dlyltstore.com\\public\\uploads\\images
+    base_path: D:/tpbd_service
+api:
+    url: http://localhost/index/Modifyapi
+#    url:  http://storage.dlyltstore.com/index/Modifyapi

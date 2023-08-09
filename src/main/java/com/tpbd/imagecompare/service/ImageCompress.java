@@ -1,6 +1,7 @@
 package com.tpbd.imagecompare.service;
 
 import net.coobird.thumbnailator.Thumbnails;
+import org.springframework.stereotype.Service;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -10,14 +11,14 @@ import java.io.*;
 public class ImageCompress {
     public static void main(String[] args) throws IOException {
         //291317
-        long start = System.currentTimeMillis();
-        Thumbnails.of(new File("/Users/guoying/Downloads/20220929250.tif"))
-                .scale(0.5f)
-                .rotate(90)
-                .outputQuality(0.1)
-                .outputFormat("jpg")
-                .toFile(new File("/Users/guoying/Downloads/test.jpg"));
-        System.out.println(System.currentTimeMillis() - start);
+//        long start = System.currentTimeMillis();
+//        Thumbnails.of(new File("/Users/guoying/Downloads/20220929250.tif"))
+//                .scale(0.5f)
+//                .rotate(90)
+//                .outputQuality(0.1)
+//                .outputFormat("jpg")
+//                .toFile(new File("/Users/guoying/Downloads/test.jpg"));
+        System.out.println(System.currentTimeMillis()/1000);
     }
 //    public static void main(String[] args) throws Exception {
 //        String a1 = tiffTuanJPG("/Users/guoying/Downloads/20220929250a.jpg");
